@@ -1,0 +1,227 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	font-size: 20px;
+}
+span{
+	background: Peru;
+	transition: 1s;
+	padding: 3px;
+	border-radius: 5px;
+}
+span:hover{
+	background: NavajoWhite;
+}
+iframe{
+	display:block;
+	margin: 50px auto;
+	width: 460px;
+	height: 259px;
+}
+textarea{
+	height: 100px;
+	width: 100%;
+}
+.fon{
+	transition: 1s;
+}
+.fon:hover{
+	transform: scale(0.1, 0.1);
+}
+.fon2{
+	transition: 1s;
+}
+.fon2:hover{
+	transform: scale(0.5, 0.5);
+}
+.fon3{
+	transition: 1s;
+}
+.fon3:hover{
+	transform: scale(1.5, 1.5);
+}
+.fon4{
+	transition: 1s;
+}
+.fon4:hover{
+	transform: scale(2.5, 2.5);
+}
+.header{
+	background: linear-gradient(Peru 80%, white);
+	padding: 10px;
+	text-align: center;
+	height: 30px;
+}
+.header a{
+	padding: 10px;
+}
+.container{
+	margin: auto;
+}
+.wrapper{
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+.footer{
+	background: linear-gradient(white, Peru 15%);
+	align-items: flex-end;
+}
+.footer, .push{
+	height: 100px;
+}
+.flx{
+	display: flex;
+	flex-direction: column;
+}
+.flx2{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.flx3{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+.dnc{
+	animation: dance 1s infinite;
+}
+.dnc2{
+	animation: dance2 1s infinite;
+}
+
+@media (min-width: 320px) {
+	iframe{
+		width: 500px;
+		height: 281px;
+	}
+	.container {
+	}
+	.img{
+		height: 100px;
+	}
+	.img2{
+		height: 300px;
+	}
+	@keyframes dance{
+		0%{
+			height: 300px;
+			width: 107px;
+		}
+		50%{
+			height: 290px;
+			width: 107px;
+		}
+		100%{
+			height: 300px;
+			width: 107px;
+		}
+	}
+	@keyframes dance2{
+		50%{
+			transform: matrix(1, 0, 0, 0.96, 0, 6);
+		}
+	}
+
+@media (min-width: 768px) {
+	iframe{
+		width: 500px;
+		height: 281px;
+	}
+	.container {
+	}
+	.img{
+		height: 150px;
+	}
+	.img2{
+		height: 450px;
+	}
+	@keyframes dance{
+		0%{
+			height: 450px;
+			width: 160px;
+		}
+		50%{
+			height: 440px;
+			width: 160px;
+		}
+		100%{
+			height: 450px;
+			width: 160px;
+		}
+	}
+	@keyframes dance2{
+		50%{
+			transform: matrix(1, 0, 0, 0.96, 0, 10);
+		}
+	}
+
+}
+@media (min-width: 992px) {
+	iframe{
+		width: 560px;
+		height: 315px;
+	}
+	.container {
+	}
+	.img{
+		height: 200px;
+	}
+	.img2{
+		height: 600px;
+	}
+	@keyframes dance{
+		0%{
+			height: 600px;
+			width: 213px;
+		}
+		50%{
+			height: 590px;
+			width: 213px;
+		}
+		100%{
+			height: 600px;
+			width: 213px;
+		}
+	}
+	@keyframes dance2{
+		50%{
+			transform: matrix(1, 0, 0, 0.96, 0, 17);
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	iframe{
+		width: 720px;
+		height: 405px;
+	}
+	.container {
+		width: 1000px;
+	}
+	.img{
+		height: 200px;
+	}
+	.img2{
+		height: 750px;
+	}
+	@keyframes dance{
+		0%{
+			height: 750px;
+			width: 267px;
+		}
+		50%{
+			height: 740px;
+			width: 267px;
+		}
+		100%{
+			height: 750px;
+			width: 267px;
+		}
+	}
+	@keyframes dance2{
+		50%{
+			transform: matrix(1, 0, 0, 0.96, 0, 20);
+		}
+	}
+}
